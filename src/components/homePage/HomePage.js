@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import NavBar from "../navBar/NavBar";
 import Hero from "../hero/Hero";
 import About from "../about/About";
@@ -6,8 +7,6 @@ import Banner from "../offerBanner/Banner";
 import ProductSlider from "../productSlider/ProductSlider";
 import Organic from "../organic/Organic";
 import Footer from "../footer/Footer";
-import Menu1 from "../menu/MenuTemplet1";
-import Menu2 from "../menu/MenuTemplet2";
 import Menu from "../menu/Menu";
 
 export default function HomePage() {
@@ -25,7 +24,7 @@ export default function HomePage() {
     } catch (error) {
       console.log(error.message);
     } finally {
-      setLoading(false);
+      console.log("Success");
     }
   };
 
